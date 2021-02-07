@@ -6,12 +6,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>pet-clinic-web</artifactId>
+
         <!-- Web dependencies -->
         <properties>
+
             <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
             <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
             <webjars-jquery.version>2.2.4</webjars-jquery.version>
-            <wro4j.version>1.8.0</wro4j.version>
+            <wro4j.version>1.9.0</wro4j.version>
         </properties>
 
 
@@ -47,7 +49,8 @@
         <!-- webjars -->
         <dependency>
             <groupId>org.webjars</groupId>
-            <artifactId>webjars-locator-core</artifactId>
+            <artifactId>webjars-locator</artifactId>
+            <version>0.30</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -65,6 +68,7 @@
             <version>${webjars-bootstrap.version}</version>
         </dependency>
         <!-- end of webjars -->
+
     </dependencies>
 
 <build>
@@ -72,7 +76,7 @@
         <plugin>
             <groupId>ro.isdc.wro4j</groupId>
             <artifactId>wro4j-maven-plugin</artifactId>
-            <version>${wro4j.version}</version>
+            <version>1.10.1</version>
             <executions>
                 <execution>
                     <phase>generate-resources</phase>
