@@ -40,3 +40,9 @@ jobs:
 
       # run tests!
       - run: mvn install
+
+
+      - store_test_results:
+          path: /tmp/test-results
+
+
